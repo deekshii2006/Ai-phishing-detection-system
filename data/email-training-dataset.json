@@ -1,0 +1,150 @@
+[
+  {
+    "label": "phishing",
+    "text": "Security alert: your Microsoft 365 mailbox will be suspended today. Verify your account immediately and confirm your password using the secure portal."
+  },
+  {
+    "label": "phishing",
+    "text": "PayPal account limited due to unusual sign in activity. Login now to restore access and validate your billing details."
+  },
+  {
+    "label": "phishing",
+    "text": "Bank of America detected suspicious activity on your account. Confirm your identity and update your PIN within 24 hours."
+  },
+  {
+    "label": "phishing",
+    "text": "Your payroll information is incomplete. Open the attached form and resubmit your bank credentials before salary processing closes."
+  },
+  {
+    "label": "phishing",
+    "text": "Amazon order on hold. Click the link to verify your card and avoid package cancellation."
+  },
+  {
+    "label": "phishing",
+    "text": "DocuSign urgent action required. Review the secure document and sign in with your company password."
+  },
+  {
+    "label": "phishing",
+    "text": "Final notice: your company email storage is full. Reset your password and confirm your mailbox settings now."
+  },
+  {
+    "label": "phishing",
+    "text": "Chase fraud alert. We placed a temporary block on your account. Validate your login and confirm the recent transaction."
+  },
+  {
+    "label": "phishing",
+    "text": "Invoice attached for overdue payment. Download the zip file and review the payment portal today."
+  },
+  {
+    "label": "phishing",
+    "text": "OpenAI team notice: unusual login from a new device. Re authenticate your account and confirm recovery email access."
+  },
+  {
+    "label": "phishing",
+    "text": "You have received a secure voice message. Access the protected message center and sign in to listen now."
+  },
+  {
+    "label": "phishing",
+    "text": "Employee benefits update required. Failure to confirm your social security number will deactivate your healthcare plan."
+  },
+  {
+    "label": "phishing",
+    "text": "GitHub detected a billing failure. Verify your payment method immediately to avoid repository suspension."
+  },
+  {
+    "label": "phishing",
+    "text": "Your shared file has been quarantined for security reasons. Unlock the document by entering your email password."
+  },
+  {
+    "label": "phishing",
+    "text": "Apple ID locked due to unauthorized activity. Confirm your identity and review your payment profile right away."
+  },
+  {
+    "label": "phishing",
+    "text": "Urgent HR request. Update your direct deposit account before the payroll cutoff by signing into the review page."
+  },
+  {
+    "label": "phishing",
+    "text": "Tax refund available. Confirm your banking details and upload your identification through the secure processing center."
+  },
+  {
+    "label": "phishing",
+    "text": "VPN access expires today. Keep your account active by verifying your password and one time code."
+  },
+  {
+    "label": "legitimate",
+    "text": "Team meeting moved to 3 PM in conference room B. The updated agenda is attached for review before the call."
+  },
+  {
+    "label": "legitimate",
+    "text": "Your interview with the design panel is confirmed for Tuesday. Please arrive ten minutes early at the front desk."
+  },
+  {
+    "label": "legitimate",
+    "text": "Calendar invite: quarterly operations review on Friday. We will discuss roadmap updates and next sprint priorities."
+  },
+  {
+    "label": "legitimate",
+    "text": "Reminder from the clinic: your dentist appointment is scheduled for tomorrow at 9 AM. Call us if you need to reschedule."
+  },
+  {
+    "label": "legitimate",
+    "text": "Thanks again for your presentation today. The team appreciated the walkthrough and follow up notes."
+  },
+  {
+    "label": "legitimate",
+    "text": "Your verification code is 482913. Do not share this code with anyone. It expires in ten minutes."
+  },
+  {
+    "label": "legitimate",
+    "text": "The finance team published the monthly budget workbook in the shared drive. Please review the numbers before Wednesday."
+  },
+  {
+    "label": "legitimate",
+    "text": "Shipping update: your package is ready for pickup. Track delivery status in the official app when convenient."
+  },
+  {
+    "label": "legitimate",
+    "text": "We have received your support request and assigned ticket 20418. A technician will contact you during business hours."
+  },
+  {
+    "label": "legitimate",
+    "text": "Happy birthday from the people team. Stop by the kitchen this afternoon for cake and coffee."
+  },
+  {
+    "label": "legitimate",
+    "text": "The project kickoff deck is available in the internal workspace. Please add comments before tomorrow's planning session."
+  },
+  {
+    "label": "legitimate",
+    "text": "Conference registration confirmed. Your attendee badge can be collected at the venue reception on arrival."
+  },
+  {
+    "label": "legitimate",
+    "text": "Our records show your subscription renewed successfully. No action is required at this time."
+  },
+  {
+    "label": "legitimate",
+    "text": "Reminder: submit vacation dates to your manager before Friday so the staffing calendar stays current."
+  },
+  {
+    "label": "legitimate",
+    "text": "Dinner is still on for Saturday evening. Let me know if you want me to make the reservation for 7 PM."
+  },
+  {
+    "label": "legitimate",
+    "text": "The recruiting coordinator shared your travel itinerary for next week. Hotel and flight details are listed below."
+  },
+  {
+    "label": "legitimate",
+    "text": "Please review the attached draft contract and add legal comments in the document by end of day Thursday."
+  },
+  {
+    "label": "legitimate",
+    "text": "Your maintenance request was completed this morning. Reply if the office printer is still showing the same issue."
+  },
+  {
+    "label": "legitimate",
+    "text": "This is a routine reminder to complete cybersecurity awareness training in the employee learning portal before month end."
+  }
+]
