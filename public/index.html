@@ -1,1 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PhishGuard AI | Detect. Defend. Stay Secure.</title>
+    <meta
+      name="description"
+      content="PhishGuard AI is a premium phishing detection web app for emails, SMS, and URLs."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <nav class="topbar">
+          <div class="brand">
+            <span class="brand-mark"></span>
+            <div>
+              <p class="brand-name">PhishGuard AI</p>
+              <span class="brand-tag">Detect. Defend. Stay Secure.</span>
+            </div>
+          </div>
+          <a href="#detector" class="ghost-button">Launch Scanner</a>
+        </nav>
 
+        <div class="hero-grid">
+          <section class="hero-copy panel glass">
+            <p class="eyebrow">AI Cyber Defense Platform</p>
+            <h1>Spot phishing across email, SMS, and suspicious links before users click.</h1>
+            <p class="hero-text">
+              A hybrid AI plus rule-based engine designed for hackathon demos, SOC-inspired
+              storytelling, and real-world awareness workflows.
+            </p>
+            <div class="hero-actions">
+              <a href="#detector" class="primary-button">Scan Threat</a>
+              <a href="#about" class="secondary-button">Why It Works</a>
+            </div>
+            <div class="hero-stats">
+              <article><strong>3-in-1</strong><span>Email, SMS, URL</span></article>
+              <article><strong>Hybrid AI</strong><span>Inference + heuristics</span></article>
+              <article><strong>Live Explainability</strong><span>Confidence + reasons</span></article>
+            </div>
+          </section>
+
+          <aside class="threat-card panel glass">
+            <div class="threat-header">
+              <span class="status-dot"></span>
+              <p>Threat Intelligence Snapshot</p>
+            </div>
+            <div class="threat-screen">
+              <div class="scan-line"></div>
+              <div class="screen-row"><span>Signal</span><strong>Phishing lure detected</strong></div>
+              <div class="screen-row"><span>Vector</span><strong>Credential Harvesting</strong></div>
+              <div class="screen-row"><span>Confidence</span><strong>92%</strong></div>
+              <div class="screen-grid">
+                <span>Email coercion</span>
+                <span>Link masking</span>
+                <span>Typosquatting</span>
+                <span>Urgency wording</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </header>
+
+      <main>
+        <section id="detector" class="detector-section">
+          <div class="section-heading">
+            <p class="eyebrow">Detection Panel</p>
+            <h2>Scan suspicious content in seconds</h2>
+            <p>
+              Each detector runs independently with its own live dashboard, so judges can inspect
+              email, SMS, and URL results side by side inside one experience.
+            </p>
+          </div>
+
+          <div class="detector-layout">
+            <div class="scanner-workbench">
+              <article class="scan-cluster" data-scan-surface="email">
+                <form class="panel glass detection-form scan-card" data-scan-type="email">
+                  <div class="scan-card-header">
+                    <div>
+                      <p class="eyebrow">Email Detector</p>
+                      <h3>Scan email content only</h3>
+                    </div>
+                    <span class="scan-chip">Headers, tone, embedded links</span>
+                  </div>
+                  <label>
+                    <span>Email content</span>
+                    <textarea
+                      id="emailContent"
+                      placeholder="Paste the email body or raw email text here..."
+                    ></textarea>
+                  </label>
+                  <div class="form-actions">
+                    <button type="button" class="secondary-button sample-trigger" data-sample-type="email">
+                      Load Email Demo
+                    </button>
+                    <button type="submit" class="primary-button">Scan Email</button>
+                  </div>
+                  <div class="loading-state card-loading" data-loading-for="email" aria-hidden="true">
+                    <div class="spinner"></div>
+                    <span>Checking CEAS dataset, AI, and email threat signals...</span>
+                  </div>
+                </form>
+
+                <section class="panel glass scan-dashboard" data-dashboard-for="email" aria-live="polite">
+                  <div class="results-header">
+                    <div>
+                      <p class="eyebrow">Email Dashboard</p>
+                      <h3 class="result-title">Awaiting Email Scan</h3>
+                    </div>
+                    <span class="status-badge neutral result-status">No result</span>
+                  </div>
+                  <div class="meter-wrap">
+                    <div class="meter-ring">
+                      <svg viewBox="0 0 120 120">
+                        <circle class="meter-track" cx="60" cy="60" r="46"></circle>
+                        <circle class="meter-fill" cx="60" cy="60" r="46"></circle>
+                      </svg>
+                      <div class="meter-text">
+                        <strong class="result-confidence">0%</strong>
+                        <span>Risk</span>
+                      </div>
+                    </div>
+                    <div class="result-summary">
+                      <p class="result-explanation">
+                        Scan an email to see confidence, phishing signals, and highlighted language.
+                      </p>
+                      <div class="summary-tags result-tags">
+                        <span>Header checks</span>
+                        <span>AI scoring</span>
+                        <span>Embedded link review</span>
+                      </div>
+                    </div>
+                  </div>
+                  <article class="reachability-panel result-reachability is-empty">
+                    <div class="reachability-header">
+                      <h4>Website Reachability</h4>
+                      <span class="status-badge neutral result-reachability-badge">Pending</span>
+                    </div>
+                    <p class="reachability-text result-reachability-status">
+                      Reachability details will appear after a scan.
+                    </p>
+                    <p class="reachability-meta result-reachability-code">Status code: --</p>
+                    <ul class="finding-list reachability-list result-reachability-reasons">
+                      <li>DNS and HTTP checks will be summarized here.</li>
+                    </ul>
+                    <p class="reachability-warning result-reachability-warning" hidden>
+                      Unreachable domains are often used in phishing attacks.
+                    </p>
+                  </article>
+                  <div class="findings-grid">
+                    <article class="finding-card">
+                      <h4>Highlighted Content</h4>
+                      <div class="finding-content result-highlights empty">
+                        Suspicious email phrases will appear here.
+                      </div>
+                    </article>
+                    <article class="finding-card">
+                      <h4>URL Risk Breakdown</h4>
+                      <ul class="finding-list result-url-findings">
+                        <li>Embedded email links and domains will be listed here.</li>
+                      </ul>
+                    </article>
+                  </div>
+                  <div class="result-actions">
+                    <button type="button" class="ghost-button report-btn" data-report-for="email">
+                      Report Email Threat
+                    </button>
+                    <span class="result-model-info">Model standby</span>
+                  </div>
+                </section>
+              </article>
+
+              <article class="scan-cluster" data-scan-surface="sms">
+                <form class="panel glass detection-form scan-card" data-scan-type="sms">
+                  <div class="scan-card-header">
+                    <div>
+                      <p class="eyebrow">SMS Detector</p>
+                      <h3>Scan SMS or message only</h3>
+                    </div>
+                    <span class="scan-chip">Short links, urgency, scam phrasing</span>
+                  </div>
+                  <label>
+                    <span>SMS or message</span>
+                    <textarea
+                      id="messageContent"
+                      placeholder="Paste the text message, DM, or chat message here..."
+                    ></textarea>
+                  </label>
+                  <div class="form-actions">
+                    <button type="button" class="secondary-button sample-trigger" data-sample-type="sms">
+                      Load SMS Demo
+                    </button>
+                    <button type="submit" class="primary-button">Scan SMS</button>
+                  </div>
+                  <div class="loading-state card-loading" data-loading-for="sms" aria-hidden="true">
+                    <div class="spinner"></div>
+                    <span>Checking CEAS dataset, AI, and message threat signals...</span>
+                  </div>
+                </form>
+
+                <section class="panel glass scan-dashboard" data-dashboard-for="sms" aria-live="polite">
+                  <div class="results-header">
+                    <div>
+                      <p class="eyebrow">SMS Dashboard</p>
+                      <h3 class="result-title">Awaiting SMS Scan</h3>
+                    </div>
+                    <span class="status-badge neutral result-status">No result</span>
+                  </div>
+                  <div class="meter-wrap">
+                    <div class="meter-ring">
+                      <svg viewBox="0 0 120 120">
+                        <circle class="meter-track" cx="60" cy="60" r="46"></circle>
+                        <circle class="meter-fill" cx="60" cy="60" r="46"></circle>
+                      </svg>
+                      <div class="meter-text">
+                        <strong class="result-confidence">0%</strong>
+                        <span>Risk</span>
+                      </div>
+                    </div>
+                    <div class="result-summary">
+                      <p class="result-explanation">
+                        Scan an SMS to see risky phrasing, suspicious links, and confidence.
+                      </p>
+                      <div class="summary-tags result-tags">
+                        <span>Short-link checks</span>
+                        <span>Urgency scoring</span>
+                        <span>Scam language review</span>
+                      </div>
+                    </div>
+                  </div>
+                  <article class="reachability-panel result-reachability is-empty">
+                    <div class="reachability-header">
+                      <h4>Website Reachability</h4>
+                      <span class="status-badge neutral result-reachability-badge">Pending</span>
+                    </div>
+                    <p class="reachability-text result-reachability-status">
+                      Reachability details will appear after a scan.
+                    </p>
+                    <p class="reachability-meta result-reachability-code">Status code: --</p>
+                    <ul class="finding-list reachability-list result-reachability-reasons">
+                      <li>DNS and HTTP checks will be summarized here.</li>
+                    </ul>
+                    <p class="reachability-warning result-reachability-warning" hidden>
+                      Unreachable domains are often used in phishing attacks.
+                    </p>
+                  </article>
+                  <div class="findings-grid">
+                    <article class="finding-card">
+                      <h4>Highlighted Content</h4>
+                      <div class="finding-content result-highlights empty">
+                        Suspicious SMS phrases will appear here.
+                      </div>
+                    </article>
+                    <article class="finding-card">
+                      <h4>URL Risk Breakdown</h4>
+                      <ul class="finding-list result-url-findings">
+                        <li>Linked destinations in the message will be listed here.</li>
+                      </ul>
+                    </article>
+                  </div>
+                  <div class="result-actions">
+                    <button type="button" class="ghost-button report-btn" data-report-for="sms">
+                      Report SMS Threat
+                    </button>
+                    <span class="result-model-info">Model standby</span>
+                  </div>
+                </section>
+              </article>
+
+              <article class="scan-cluster" data-scan-surface="url">
+                <form class="panel glass detection-form scan-card" data-scan-type="url">
+                  <div class="scan-card-header">
+                    <div>
+                      <p class="eyebrow">URL Detector</p>
+                      <h3>Scan URL only</h3>
+                    </div>
+                    <span class="scan-chip">Domain reputation, lookalikes, path risk</span>
+                  </div>
+                  <label>
+                    <span>URL or website</span>
+                    <input
+                      id="urlInput"
+                      type="text"
+                      placeholder="https://example-security-check.com"
+                    />
+                  </label>
+                  <div class="form-actions">
+                    <button type="button" class="secondary-button sample-trigger" data-sample-type="url">
+                      Load URL Demo
+                    </button>
+                    <button type="submit" class="primary-button">Scan URL</button>
+                  </div>
+                  <div class="loading-state card-loading" data-loading-for="url" aria-hidden="true">
+                    <div class="spinner"></div>
+                    <span>Checking CEAS dataset, DNS, reachability, and phishing signals...</span>
+                  </div>
+                </form>
+
+                <section class="panel glass scan-dashboard" data-dashboard-for="url" aria-live="polite">
+                  <div class="results-header">
+                    <div>
+                      <p class="eyebrow">URL Dashboard</p>
+                      <h3 class="result-title">Awaiting URL Scan</h3>
+                    </div>
+                    <span class="status-badge neutral result-status">No result</span>
+                  </div>
+                  <div class="meter-wrap">
+                    <div class="meter-ring">
+                      <svg viewBox="0 0 120 120">
+                        <circle class="meter-track" cx="60" cy="60" r="46"></circle>
+                        <circle class="meter-fill" cx="60" cy="60" r="46"></circle>
+                      </svg>
+                      <div class="meter-text">
+                        <strong class="result-confidence">0%</strong>
+                        <span>Risk</span>
+                      </div>
+                    </div>
+                    <div class="result-summary">
+                      <p class="result-explanation">
+                        Scan a URL to see lookalike domains, protocol issues, and malicious patterns.
+                      </p>
+                      <div class="summary-tags result-tags">
+                        <span>Domain analysis</span>
+                        <span>Lookalike detection</span>
+                        <span>Path inspection</span>
+                      </div>
+                    </div>
+                  </div>
+                  <article class="reachability-panel result-reachability is-empty">
+                    <div class="reachability-header">
+                      <h4>Website Reachability</h4>
+                      <span class="status-badge neutral result-reachability-badge">Pending</span>
+                    </div>
+                    <p class="reachability-text result-reachability-status">
+                      Reachability details will appear after a scan.
+                    </p>
+                    <p class="reachability-meta result-reachability-code">Status code: --</p>
+                    <ul class="finding-list reachability-list result-reachability-reasons">
+                      <li>DNS and HTTP checks will be summarized here.</li>
+                    </ul>
+                    <p class="reachability-warning result-reachability-warning" hidden>
+                      Unreachable domains are often used in phishing attacks.
+                    </p>
+                  </article>
+                  <div class="findings-grid">
+                    <article class="finding-card">
+                      <h4>Highlighted Content</h4>
+                      <div class="finding-content result-highlights empty">
+                        URL-specific suspicious terms will appear here.
+                      </div>
+                    </article>
+                    <article class="finding-card">
+                      <h4>URL Risk Breakdown</h4>
+                      <ul class="finding-list result-url-findings">
+                        <li>Domain and path findings will be listed here.</li>
+                      </ul>
+                    </article>
+                  </div>
+                  <div class="result-actions">
+                    <button type="button" class="ghost-button report-btn" data-report-for="url">
+                      Report URL Threat
+                    </button>
+                    <span class="result-model-info">Model standby</span>
+                  </div>
+                </section>
+              </article>
+
+            </div>
+          </div>
+        </section>
+
+        <section class="intel-grid">
+          <article class="panel glass info-card">
+            <p class="eyebrow">Awareness Tips</p>
+            <h3>How to avoid getting hooked</h3>
+            <ul class="tips-list">
+              <li>Check the sender domain closely for misspellings or lookalikes.</li>
+              <li>Never trust urgency alone. Verify through a separate official channel.</li>
+              <li>Hover over links before clicking and inspect the destination.</li>
+              <li>Be cautious with attachments requesting macros, passwords, or payment.</li>
+            </ul>
+          </article>
+          <article class="panel glass info-card">
+            <p class="eyebrow">Example Cases</p>
+            <h3>Real-world phishing patterns</h3>
+            <div class="case-stack">
+              <div class="case-item">
+                <span>Email</span>
+                <p>"Your mailbox will be deactivated today. Verify credentials immediately."</p>
+              </div>
+              <div class="case-item">
+                <span>SMS</span>
+                <p>"Bank alert: confirm your card now at bit.ly/secure-update."</p>
+              </div>
+              <div class="case-item">
+                <span>URL</span>
+                <p>paypa1-security-check.com/login mimics a trusted brand.</p>
+              </div>
+            </div>
+          </article>
+          <article class="panel glass info-card extension-card">
+            <p class="eyebrow">Extension Concept</p>
+            <h3>Browser shield mockup</h3>
+            <div class="extension-ui">
+              <div class="extension-bar">
+                <span class="status-dot"></span>
+                <strong>Protected Session</strong>
+              </div>
+              <div class="extension-body">
+                <p>Blocked a risky page before credential entry.</p>
+                <div class="extension-score"><span>Threat score</span><strong>89%</strong></div>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section id="about" class="about-section panel glass">
+          <div class="section-heading">
+            <p class="eyebrow">About The Engine</p>
+            <h2>Built for fast demos, clear storytelling, and practical phishing awareness</h2>
+          </div>
+          <div class="about-grid">
+            <article>
+              <h3>AI signal</h3>
+              <p>
+                Optional Hugging Face inference adds a free AI layer that estimates manipulative tone
+                and suspicious language patterns.
+              </p>
+            </article>
+            <article>
+              <h3>Rule-based analysis</h3>
+              <p>
+                Local logic flags urgency words, credential theft patterns, URL shorteners,
+                typosquatting, IP-based links, and obfuscated destinations.
+              </p>
+            </article>
+            <article>
+              <h3>Explainable output</h3>
+              <p>
+                Every scan returns a clear label, confidence score, highlighted risk phrases, and a
+                detailed explanation that judges can follow instantly.
+              </p>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <button
+      type="button"
+      class="chat-launch"
+      id="chatToggle"
+      aria-controls="assistantPanel"
+      aria-expanded="false"
+    >
+      <span class="chat-launch-icon">AI</span>
+      <span class="chat-launch-label">Ask Security Assistant</span>
+    </button>
+
+    <section class="assistant-dock panel glass" id="assistantPanel" hidden aria-live="polite">
+      <div class="assistant-header">
+        <div>
+          <p class="eyebrow">Cyber Guide</p>
+          <h3>Security Assistant</h3>
+        </div>
+        <button type="button" class="assistant-close ghost-button" id="chatClose">Close</button>
+      </div>
+      <p class="assistant-subtitle">
+        Ask why a scan was flagged, whether something looks safe, or how to avoid scams.
+      </p>
+      <div class="assistant-suggestions">
+        <button type="button" class="assistant-suggestion" data-chat-question="Why is this phishing?">
+          Why is this phishing?
+        </button>
+        <button type="button" class="assistant-suggestion" data-chat-question="Is this email safe?">
+          Is this email safe?
+        </button>
+        <button type="button" class="assistant-suggestion" data-chat-question="How do I avoid scams?">
+          How do I avoid scams?
+        </button>
+      </div>
+      <div class="assistant-messages" id="assistantMessages">
+        <article class="assistant-message assistant">
+          <div class="assistant-avatar">AI</div>
+          <div class="assistant-bubble">
+            I can explain phishing risks, suspicious links, and what your last scan means.
+          </div>
+        </article>
+      </div>
+      <form class="assistant-form" id="assistantForm">
+        <input
+          id="assistantInput"
+          type="text"
+          maxlength="320"
+          placeholder="Ask about phishing risks or your last scan..."
+          autocomplete="off"
+        />
+        <button type="submit" class="primary-button assistant-send">Send</button>
+      </form>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
