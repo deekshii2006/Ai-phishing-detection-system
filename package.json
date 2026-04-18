@@ -1,0 +1,28 @@
+{
+  "name": "phishguard-ai",
+  "version": "1.0.0",
+  "description": "AI-powered phishing detection web app for emails, SMS, and URLs.",
+  "main": "server.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "sync:phishing-db": "node scripts/syncPhishingDatabase.js"
+  },
+  "keywords": [
+    "phishing",
+    "cybersecurity",
+    "ai",
+    "express",
+    "hackathon"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "csv-parser": "^3.2.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}
