@@ -1,1 +1,18 @@
-
+{
+  "sourceRepository": "https://github.com/Phishing-Database/Phishing.Database",
+  "syncedAt": "2026-04-17T09:37:20.000Z",
+  "files": [
+    {
+      "fileName": "phishing-domains-ACTIVE.txt",
+      "bytes": 11009373
+    },
+    {
+      "fileName": "phishing-links-ACTIVE.txt",
+      "bytes": 55948460
+    },
+    {
+      "fileName": "phishing-IPs-ACTIVE.txt",
+      "bytes": 100393
+    }
+  ]
+}
